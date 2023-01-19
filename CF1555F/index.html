@@ -8,7 +8,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta itemprop="name" content="LTb_" />
-  <meta itemprop="description" content="Some Markdown Files." />
+  <meta itemprop="description" content="曾有七次我鄙视了自己的灵魂。" />
   <meta itemprop="image" content="" />
   <link rel="shortcut icon" href="" type="image/x-icon">
   <!-- keywords and description -->
@@ -155,14 +155,22 @@ mjx-container[display="true"] + br {
   </div>
   
   <div class="site-subtitle">
-    Some Markdown Files.
+    曾有七次我鄙视了自己的灵魂。
   </div>
   
   
   <p class="links">
     
-    <a href="">
+    <a href="/indexes/">
+      <img src="/images/links/feed.png" alt="Indexes">
+    </a>
+    
+    <a href="/about/">
       <img src="/images/links/about.png" alt="About">
+    </a>
+    
+    <a href="/links/">
+      <img src="/images/links/link.png" alt="Links">
     </a>
     
   </p>
@@ -183,8 +191,7 @@ mjx-container[display="true"] + br {
   
   
   <article>
-    <p>testtesttest</p>
-<p>称权值异或和为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span> 的简单环为合法的环。</p>
+    <p>称权值异或和为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container></span> 的简单环为合法的环。</p>
 <p>假设两个合法的环有至少一条公共边，那么考虑它们组成的大环的权值：每条公共边上的权值相同可以抵消，其他边上的权值异或和相同，也抵消，则大环的权值为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></g></g></g></svg></mjx-container></span>——显然这两个环组成的大环不是合法的，所以原图一定是一个仙人掌状物。</p>
 <p>然后考虑仙人掌是个什么样的东西：对它建出 DFS 树，每条非树边连接的两个点 在树上所形成的链 互不相交。那么把询问离线，用并查集维护，先建出这棵 DFS 树，然后对于每条非树边判断是否合法。具体来说，判断：</p>
 <ol type="1">
